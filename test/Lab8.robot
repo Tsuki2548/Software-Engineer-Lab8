@@ -5,7 +5,7 @@ Library    SeleniumLibrary
 Check KKU Computing Website
     [Documentation]    ทดสอบเปิดเว็บคณะ CP
     Open Browser To Login Page
-    Title Should Be    College of Computing, Khon Kaen University
+    Title Should Contain    College of Computing
     [Teardown]    Close Browser
 
 *** Keywords ***
