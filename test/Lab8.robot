@@ -1,6 +1,13 @@
 *** Settings ***
 Library    SeleniumLibrary
 
+*** Test Cases ***
+Check KKU Computing Website
+    [Documentation]    ทดสอบเปิดเว็บคณะ CP
+    Open Browser To Login Page
+    Title Should Be    College of Computing, Khon Kaen University
+    [Teardown]    Close Browser
+
 *** Keywords ***
 Open Browser To Login Page
     ${chrome_options}=    Evaluate    sys.modules['selenium.webdriver'].ChromeOptions()    sys
